@@ -6,4 +6,4 @@ Tools: TypeScript, Playwright, Node.js, Visual Studio Code, Git & GitHub.
 
 Tests are organized with Page Object Model and executed using `npx playwright test`. CI/CD workflows will be added to automate test execution on each push.  
 
-**Author:** Cornea Levente
+**Author:** Levente Cornea
