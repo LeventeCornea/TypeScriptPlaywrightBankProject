@@ -4,8 +4,8 @@ import { CustomerLoginPage } from '../../../../pages/CustomerLoginPage';
 import { CustomerAccountPage } from '../../../../pages/CustomerAccountPage';
 
 test.describe('Logging in multiple existing customer accounts', () => {
-  test('Login and logout for multiple customers', async ({ page, testName }) => {
-    console.log(`Running test: ${testName}`);
+  test('Login and logout for multiple customers', async ({ page }) => {
+    await page.goto('https://www.globalsqa.com/angularJs-protractor/BankingProject/');
 
     const indexPage = new IndexPage(page);
     const customersListPage = new CustomerLoginPage(page);

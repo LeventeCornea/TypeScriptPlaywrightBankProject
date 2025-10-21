@@ -7,8 +7,8 @@ import { CustomerLoginPage } from '../../../../pages/CustomerLoginPage';
 import { CustomerAccountPage } from '../../../../pages/CustomerAccountPage';
 
 test.describe('Newly created customers', () => {
-    test('Create customers, open accounts, login and logout', async ({ page, testName }) => {
-        console.log(`Running test: ${testName}`);
+    test('Create customers, open accounts, login and logout', async ({ page }) => {
+        await page.goto('https://www.globalsqa.com/angularJs-protractor/BankingProject/');
 
         const indexPage = new IndexPage(page);
         const bankManagerPage = new BankManagerPage(page);
