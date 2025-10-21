@@ -31,6 +31,7 @@ test.describe('Existing Customer Account Deposit', () => {
     await accountPage.fillDepositAmount(depositSum);
     await page.waitForTimeout(5000);
     await accountPage.selectConfirmDepositButton();
+    await page.waitForTimeout(5000);
 
     await accountPage.selectTransactionsHistoryButton();
     const transactionDate = await transactionsPage.getCurrentTransactionDate();
