@@ -1,4 +1,4 @@
-import { test } from '../../../../sharedData/SharedFixture';
+import { test } from '@playwright/test';
 import { IndexPage } from '../../../../pages/IndexPage';
 import { BankManagerPage } from '../../../../pages/BankManagerPage';
 import { AddCustomerPage } from '../../../../pages/AddCustomerPage';
